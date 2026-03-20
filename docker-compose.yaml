@@ -1,0 +1,10 @@
+services:
+  react:
+    container_name: public-react
+    image: node:22
+    tty: true
+    stdin_open: true
+    volumes:
+      - ./:/app
+    ports:
+      - "9050:5173"
